@@ -1,1 +1,0 @@
-# solvisal.github.io
