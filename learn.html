@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #class{
+        color: red;
+        font-size: 30px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div id="class" onclick="color2()">
+        hello
+    </div>
+    <img src="img/1.jpg" alt="" width="500" id="img" onmouseover="pic()" onmouseout="old_pic()" >
+    <input type="button" value="click" onclick="test()">
+    <input type="button" value="change" onclick="change()">
+    <input type="button" value="change Color" onclick="color()">
+    <input type="button" value="hide" onclick="hide()">
+    <input type="button" value="show" onclick="show()">
+
+    
+</body>
+<script>
+    function old_pic(){
+        document.getElementById("img").setAttribute("src","img/1.jpg")
+    }
+    function pic(){
+        document.getElementById("img").setAttribute("src","img/2.jpg")
+
+    }
+    function show(){
+        document.getElementById("img").style.display="block";
+    }
+    function hide(){
+        document.getElementById("img").style.display="none";
+    }
+    function color2(){
+        document.getElementById("class").style.color="red";
+    }
+    function color(){
+        document.getElementById("class").style.color="blue";
+    }
+    function test(){
+        alert("hello word")
+    }
+    function change(){
+        document.getElementById("class").innerHTML="hello word";
+    }
+</script>
+</html>
